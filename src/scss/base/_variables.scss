@@ -1,2 +1,26 @@
-$dgrey: #333;
+//colors
+$main-clr: #f00;
+$sec-clr: #0f0;
+$thi-clr: #00f;
+$main-clr-lt: $main-clr + 20;
+$sec-clr-lt: $sec-clr + 20;
+$thi-clr-lt: $thi-clr + 20;
+$main-clr-dk: $main-clr - 20;
+$sec-clr-dk: $sec-clr - 20;
+$thi-clr-dk: $thi-clr - 20;
+$dark: #333;
+$medi: #888;
+$light: #ddd;
 $white: #fff;
+$black: #000;
+$card-bground-clr: $white;
+$card-font-clr: $dark;
+$card-heading-clr: $white;
+$card-heading-bground-clr: $main-clr;
+$card-brd-clr: $medi;
+
+//sizes
+$spc: 30px;
+$qtr-spc: $spc / 4;
+$hlf-spc: $spc / 2;
+$dbl-spc: $spc * 2;

@@ -7,6 +7,7 @@ var livereload = require('gulp-livereload');
 var imagemin = require('gulp-imagemin');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
+var sourcemaps = require('gulp-sourcemaps');
 
 // callback function for error logging
 function errorLog (error) {
@@ -29,10 +30,12 @@ gulp.task('scripts', function() {
 // converts sass to css and compresses it also reloads server
 gulp.task('styles', function() {
   gulp.src('src/scss/**/*.scss')
+    .pipe(sourcemaps.init())
     .pipe(sass({
       outputStyle: 'compressed'
     })
     .on('error', sass.logError)) //.on('error', console.error.bind(console))
+    .pipe(sourcemaps.write('./maps'))
     .pipe(postcss([
       autoprefixer({"browsers": ['last 2 versions']})
     ]))

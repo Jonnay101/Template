@@ -1,1 +1,42 @@
 @import "main-nav";
+
+.card {
+  padding: $hlf-spc;
+  background: $card-bground-clr;
+  color: $card-font-clr;
+  margin-top: $spc;
+  margin-bottom: $spc;
+}
+
+.card-heading {
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: $card-heading-clr;
+  background: $card-heading-bground-clr;
+}
+
+.card-brd {
+  border: 1px solid $card-brd-clr;
+}
+
+.card-img-r {
+  img {
+    float: right;
+    margin: 0  0 $qtr-spc $qtr-spc;
+  }
+}
+
+.card-img-l {
+  img {
+    float: left;
+    margin:  0 $qtr-spc $qtr-spc 0;
+  }
+}
+
+.card-img-fill {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,3 +1,115 @@
 @import "header";
 @import "main-body";
 @import "footer";
+
+//------------floats------------
+
+.l-float-l {
+  float: left;
+}
+
+.l-float-r {
+  float: left;
+}
+
+.l-clear {
+  clear: both;
+}
+
+.l-clear-l {
+  clear: left;
+}
+
+.l-clear-r {
+  clear: r;
+}
+
+//------------spacing-----------
+
+.l-mrg {
+  margin: $spc;
+}
+
+.l-mrg-t {
+  margin-top: $spc;
+}
+
+.l-mrg-r {
+  margin-right: $spc;
+}
+
+.l-mrg-b {
+  margin-bottom: $spc;
+}
+
+.l-mrg-l {
+  margin-left: $spc;
+}
+
+.l-pad {
+  padding: $spc;
+}
+
+.l-pad-t {
+  padding-top: $spc;
+}
+
+.l-pad-r {
+  padding-right: $spc;
+}
+
+.l-pad-b {
+  padding-bottom: $spc;
+}
+
+.l-pad-l {
+  padding-left: $spc;
+}
+
+//------------colors------------
+
+//backgrounds
+.l-bg-main {
+  background: $main-clr;
+}
+
+.l-bg-sec {
+  background: $sec-clr;
+}
+
+.l-bg-thi {
+  background: $thi-clr;
+}
+
+.l-bg-dark {
+  background: $dark;
+}
+
+.l-bg-light {
+  background: $light;
+}
+
+//fonts
+.l-font-main {
+  color: $main-clr;
+}
+
+.l-font-sec {
+  color: $sec-clr;
+}
+
+.l-font-thi {
+  color: $thi-clr;
+}
+
+.l-font-white {
+  color: $white;
+}
+
+.l-font-dark {
+  color: $dark;
+}
+
+.l-font-medi {
+  color: $medi;
+}
