@@ -1,7 +1,7 @@
 {
   "name": "Template",
   "version": "1.0.0",
-  "description": "gulp build template",
+  "description": "gulp dev build template",
   "main": "script.js",
   "scripts": {
     "watch": "gulp",
@@ -17,10 +17,6 @@
     "gulp-connect": "^5.0.0",
     "gulp-imagemin": "^3.2.0",
     "gulp-livereload": "^3.8.1",
-<<<<<<< HEAD
-=======
-    "gulp-clean-css": "^1.2.4",
->>>>>>> origin/Gulp
     "gulp-plumber": "^1.1.0",
     "gulp-postcss": "^7.0.0",
     "gulp-sass": "^3.1.0",

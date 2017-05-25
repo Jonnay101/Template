@@ -3,10 +3,6 @@ var browserify = require('gulp-browserify');
 var uglify = require('gulp-uglify');
 var sass = require('gulp-sass');
 var minifyCSS = require('gulp-clean-css');
-<<<<<<< HEAD
-=======
-var livereload = require('gulp-livereload');
->>>>>>> origin/Gulp
 var imagemin = require('gulp-imagemin');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
@@ -35,7 +31,7 @@ gulp.task('scripts', function() {
     .on('error', console.error.bind(console))
     .pipe(uglify())
     .on('error', console.error.bind(console))
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('dist/js'))
     .pipe(connect.reload())
 })
 
