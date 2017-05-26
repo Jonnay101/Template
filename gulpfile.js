@@ -27,10 +27,12 @@ gulp.task('htmlCopy', function () {
 // browserifies and uglifies js file
 gulp.task('scripts', function() {
   gulp.src(['src/js/script.js'])
+    //.pipe(sourcemaps.init())
     .pipe(browserify())
     .on('error', console.error.bind(console))
     .pipe(uglify())
     .on('error', console.error.bind(console))
+    //.pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('dist/js'))
     .pipe(connect.reload())
 })
@@ -39,12 +41,10 @@ gulp.task('scripts', function() {
 // converts sass to css and compresses it also reloads server
 gulp.task('styles', function() {
   gulp.src('src/scss/**/*.scss')
-    //.pipe(sourcemaps.init())
     .pipe(sass({
       outputStyle: 'compressed'
     })
     .on('error', sass.logError)) //.on('error', console.error.bind(console))
-    //.pipe(sourcemaps.write('./maps'))
     .pipe(postcss([
       autoprefixer({"browsers": ['last 2 versions']})
     ]))
