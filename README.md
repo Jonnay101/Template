@@ -1,2 +1,2 @@
 # Template
-quick starting template for web dev projects
+quick starting sass - css template for web dev projects
